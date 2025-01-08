@@ -1,7 +1,9 @@
 import React from "react";
 import '@fortawesome/free-regular-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faReact, faDocker, faPython, } from '@fortawesome/free-brands-svg-icons';
+import {  faJs } from '@fortawesome/free-brands-svg-icons';
+import { faMobileAndroidAlt } from '@fortawesome/free-solid-svg-icons';
+
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import Chip from '@mui/material/Chip';
 import '../assets/styles/Expertise.scss';
@@ -48,40 +50,24 @@ function Expertise() {
         <div className="skills-container">
             <h1>Expertise</h1>
             <div className="skills-grid">
-                <div className="skill">
-                    <FontAwesomeIcon icon={faReact as IconProp} size="3x"/>
-                    <h3>Flutter Developer</h3>
-                    <p>I have built a diverse array of web applications from scratch using modern technologies such as React and Flask. I have a strong proficiency in the SDLC process and frontend + backend development.</p>
-                    <div className="flex-chips">
-                        <span className="chip-title">Tech stack:</span>
-                        {labelsFirst.map((label, index) => (
-                            <Chip key={index} className='chip' label={label} />
-                        ))}
-                    </div>
-                </div>
+            <div className="skill">
+            <FontAwesomeIcon icon={faMobileAndroidAlt as IconProp} lightingColor={"#db3030"}  color="#db3030" size="3x" />
+                  <h3>Mobile development</h3>
+                  <p>
+                  I have 4+ years of experience in mobile development with Flutter and React Native. I specialize in clean architecture, SOLID principles, and tools like Flutter Bloc, Provider, Redux, and dependency injection. I work with both React Native CLI and Expo, focusing on creating high-quality, scalable, and maintainable mobile apps.
+                  </p>
+                 
+              </div>
+
+                
 
                 <div className="skill">
-                    <FontAwesomeIcon icon={faDocker as IconProp} size="3x"/>
-                    <h3>DevOps & Automation</h3>
-                    <p>Once the application is built, I help clients set up DevOps testing, CI/CD pipelines, and deployment automation to support the successful Go-Live.</p>
-                    <div className="flex-chips">
-                        <span className="chip-title">Tech stack:</span>
-                        {labelsSecond.map((label, index) => (
-                            <Chip key={index} className='chip' label={label} />
-                        ))}
-                    </div>
-                </div>
-
-                <div className="skill">
-                    <FontAwesomeIcon icon={faPython as IconProp} size="3x"/>
-                    <h3>GenAI & LLM</h3>
-                    <p>Stay relevant in the market by leveraging the latest AI models in your projects. I have professional experience building enterprise grade GenAI-enabled solutions to empower intelligent decision making.</p>
-                    <div className="flex-chips">
-                        <span className="chip-title">Tech stack:</span>
-                        {labelsThird.map((label, index) => (
-                            <Chip key={index} className='chip' label={label} />
-                        ))}
-                    </div>
+                    <FontAwesomeIcon icon={faJs as IconProp} size="3x"/>
+                    <h3>JavaScript Developer</h3>
+                    <p>
+                    I have extensive experience in JavaScript with React, Node.js, and TypeScript. I build dynamic web and mobile applications, using tools like Redux, Context API, RESTful APIs, and GraphQL. I focus on creating reusable components and maintaining clean, efficient, and scalable code.
+                    </p>
+                    
                 </div>
             </div>
         </div>
