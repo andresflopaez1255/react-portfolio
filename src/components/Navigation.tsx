@@ -19,7 +19,6 @@ const navItems = [['Expertise', 'expertise'], ['History', 'history'], ['Projects
 
 function Navigation({parentToChild, modeChange}: any) {
 
-  const {mode} = parentToChild;
 
   const [mobileOpen, setMobileOpen] = useState<boolean>(false);
   const [scrolled, setScrolled] = useState<boolean>(false);
