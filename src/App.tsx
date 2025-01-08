@@ -1,12 +1,10 @@
-import React, {useState, useEffect} from "react";
+import { useState, useEffect } from "react";
 import {
-  Main,
-  Timeline,
-  Expertise,
-  Project,
-  Contact,
-  Navigation,
-  Footer,
+    Main,
+    Timeline,
+    Expertise,
+    Project, Navigation,
+    Footer
 } from "./components";
 import FadeIn from './components/FadeIn';
 import './index.scss';
