@@ -19,7 +19,7 @@ function Expertise() {
             <FontAwesomeIcon icon={faMobileAndroidAlt as IconProp} lightingColor={"#db3030"}  color="#db3030" size="3x" />
                   <h3>Mobile development</h3>
                   <p>
-                  I have 4+ years of experience in mobile development with Flutter and React Native. I specialize in clean architecture, SOLID principles, and tools like Flutter Bloc, Provider, Redux, and dependency injection. I work with both React Native CLI and Expo, focusing on creating high-quality, scalable, and maintainable mobile apps.
+                  I have 3+ years of experience in mobile development with Flutter and React Native. I specialize in clean architecture, SOLID principles, and tools like Flutter Bloc, Provider, Redux, and dependency injection. I work with both React Native CLI and Expo, focusing on creating high-quality, scalable, and maintainable mobile apps.
                   </p>
                  
               </div>
