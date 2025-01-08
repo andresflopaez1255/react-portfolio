@@ -13,8 +13,8 @@ function Project() {
                 </p>
             </div>
             <div className="project">
-                <a href="" target="_blank" rel="noreferrer"><img src={"https://firebasestorage.googleapis.com/v0/b/portafolio-dd96b.appspot.com/o/images%2FYMS.png?alt=media&token=13664cbc-262c-4d29-af8b-acd41357443d"} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="" target="_blank" rel="noreferrer"><h2>YMS</h2></a>
+                <a href="https://yachtservicesllc.com/" target="_blank" rel="noreferrer"><img src={"https://firebasestorage.googleapis.com/v0/b/portafolio-dd96b.appspot.com/o/images%2FYMS.png?alt=media&token=13664cbc-262c-4d29-af8b-acd41357443d"} className="zoom" alt="thumbnail" width="100%"/></a>
+                <a href="https://yachtservicesllc.com/" target="_blank" rel="noreferrer"><h2>YMS</h2></a>
                 <p>
                 Mobile project developed in React Native, including both client and operator apps, utilizing state management, clean architecture, and SOLID principles for efficient and maintainable code.
                 </p>
