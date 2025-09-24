@@ -5,6 +5,14 @@ import { Chrono } from "react-chrono";
 
 function Timeline() {
   const items = [
+      {
+      title: "06/2025 - 09/2025",
+      cardTitle: "Cinte colombia, Remoto",
+
+      cardSubtitle: "React Native Developer",
+      cardDetailedText:
+        "Optimized the performance of mobile applications, achieving up to a 50% improvement in loading speed and overall user experience.",
+    },
     {
       title: "03/2022 - 12/2023",
       cardTitle: "SoftwareOne, Remoto",
