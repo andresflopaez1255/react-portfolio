@@ -55,7 +55,7 @@ function Project() {
             target="_blank"
             rel="noreferrer"
           >
-            <h2>Accounts manager</h2>
+            <h2>App recipes version 2</h2>
           </a>
           <p>
             Mobile recipe application developed in Flutter, featuring optimized
