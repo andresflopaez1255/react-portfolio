@@ -9,7 +9,7 @@ function Main() {
     <div className="container">
       <div className="about-section">
         <div className="image-wrapper">
-          <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-dd96b.appspot.com/o/profile.jpg?alt=media&token=8983d88a-07ce-44c0-8eac-37e9541083d6" alt="Avatar" />
+          <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-dd96b.appspot.com/o/profile.png?alt=media&token=af11266e-5cbe-4dd2-86cb-981774abf83f" alt="Avatar" />
         </div>
         <div className="content">
          
