@@ -2,14 +2,12 @@ import { collection } from "firebase/firestore";
 import { useFirestore, useFirestoreCollectionData } from "reactfire";
 
 export default function useTimelineHook() {
+    let sortedData
   const { status, data } = useFirestoreCollectionData(
     collection(useFirestore(), "work-expierence")
   );
 
-  if(status !== 'success') return {
-    data: [],
-    status:false
-  }
+ 
   const cleanData = data.map(({ NO_ID_FIELD, ...rest }) => rest);
 
   function getEndDate(title: string): number {
@@ -19,10 +17,12 @@ export default function useTimelineHook() {
     return new Date(`${year}-${month}-01`).getTime(); // devolvemos número
   }
 
-  // ordenar de más reciente a más antiguo
-  const sortedData = [...cleanData].sort(
+  
+  if(status === 'success') {
+     sortedData = [...cleanData].sort(
     (a, b) => getEndDate(b.title) - getEndDate(a.title)
   );
+  }
 
   return {
     data: sortedData,
