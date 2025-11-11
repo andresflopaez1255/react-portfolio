@@ -6,8 +6,9 @@ import useTimelineHook from "../hooks/useTimelineHook";
 
 function Timeline() {
   const {data} = useTimelineHook()
+
   
-console.log(data)
+
   return (
     <div id="history">
       <div className="items-container">
