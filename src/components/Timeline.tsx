@@ -5,7 +5,7 @@ import { Chrono } from "react-chrono";
 import useTimelineHook from "../hooks/useTimelineHook";
 
 function Timeline() {
-  const {data,status} = useTimelineHook()
+  const {data} = useTimelineHook()
   
 console.log(data)
   return (
