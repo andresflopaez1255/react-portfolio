@@ -124,16 +124,7 @@ function Navigation({ parentToChild, modeChange }: any) {
               "& .MuiOutlinedInput-notchedOutline": { border: "none" },
             }}
           >
-            <MenuItem value="en">
-              <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
-                <img
-                  src="https://flagcdn.com/w20/us.png"
-                  alt="English"
-                  style={{ width: 20, height: 14, borderRadius: 2 }}
-                />
-                EN
-              </Box>
-            </MenuItem>
+           
             <MenuItem value="es">
               <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
                 <img
@@ -142,6 +133,16 @@ function Navigation({ parentToChild, modeChange }: any) {
                   style={{ width: 20, height: 14, borderRadius: 2 }}
                 />
                 ES
+              </Box>
+            </MenuItem>
+             <MenuItem value="en">
+              <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
+                <img
+                  src="https://flagcdn.com/w20/us.png"
+                  alt="English"
+                  style={{ width: 20, height: 14, borderRadius: 2 }}
+                />
+                EN
               </Box>
             </MenuItem>
           </Select>
