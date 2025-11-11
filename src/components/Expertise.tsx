@@ -30,9 +30,9 @@ function Expertise() {
 
                 <div className="skill">
                     <FontAwesomeIcon icon={faJs as IconProp} size="3x"/>
-                    <h3>JavaScript Developer</h3>
+                    <h3>{t.expertise.js.title}</h3>
                     <p>
-                    I have extensive experience in JavaScript with React, Node.js, and TypeScript. I build dynamic web and mobile applications, using tools like Redux, Context API, RESTful APIs, and GraphQL. I focus on creating reusable components and maintaining clean, efficient, and scalable code.
+                    {t.expertise.js.description}
                     </p>
                     
                 </div>
