@@ -5,6 +5,8 @@ export default function useTimelineHook() {
   const { status, data } = useFirestoreCollectionData(
     collection(useFirestore(), "work-expierence")
   );
+
+  if(status !== 'success') return 
   const cleanData = data.map(({ NO_ID_FIELD, ...rest }) => rest);
 
   function getEndDate(title: string): number {
