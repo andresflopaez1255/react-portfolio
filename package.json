@@ -57,6 +57,9 @@
       "last 1 safari version"
     ]
   },
+  "engines": {
+  "node": "20.x"
+},
   "devDependencies": {
     "@types/react-vertical-timeline-component": "^3.3.6"
   }
