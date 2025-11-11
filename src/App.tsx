@@ -11,6 +11,7 @@ import FadeIn from "./components/FadeIn";
 import "./index.scss";
 import { getFirestore } from "firebase/firestore";
 import { FirestoreProvider, useFirebaseApp } from "reactfire";
+import { LanguageProvider } from "./hooks/useContextLanguage";
 
 function App() {
   const firestoreInstance = getFirestore(useFirebaseApp());
@@ -31,7 +32,8 @@ function App() {
 
   return (
     <FirestoreProvider sdk={firestoreInstance}>
-      <div
+     <LanguageProvider>
+         <div
         className={`main-container ${
           mode === "dark" ? "dark-mode" : "light-mode"
         }`}
@@ -45,6 +47,7 @@ function App() {
         </FadeIn>
         <Footer />
       </div>
+     </LanguageProvider>
     </FirestoreProvider>
   );
 }

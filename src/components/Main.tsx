@@ -2,9 +2,10 @@ import React from "react";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import '../assets/styles/Main.scss';
+import { useLanguage } from "../hooks/useContextLanguage";
 
 function Main() {
-
+const {t} =useLanguage()
   return (
     <div className="container">
       <div className="about-section">
@@ -14,7 +15,7 @@ function Main() {
         <div className="content">
          
           <h1>Andrés Flórez</h1>
-          <p>Software Developer</p>
+          <p>{t.hero.role}</p>
 
           
           

@@ -1,11 +1,14 @@
 import "../assets/styles/Project.scss";
+import { useLanguage } from "../hooks/useContextLanguage";
 import useProjectsHook from "../hooks/useProjectsHook";
 
 function Project() {
   const { data, status } = useProjectsHook();
+  const { language ,t} = useLanguage();
+
   return (
     <div className="projects-container" id="projects">
-      <h1>Personal Projects</h1>
+      <h1>{t.projects.title}</h1>
       <div className="projects-grid">
         {status === "loading" ? (
           <div>cargando....</div>
@@ -35,7 +38,7 @@ function Project() {
                   <h2>{doc.name}</h2>
                 </a>
                 <p>
-                 {doc.description}
+                 {doc.description[language]}
                 </p>
               </div>
             );
