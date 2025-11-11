@@ -13,7 +13,7 @@ function Project() {
           >
             <img
               src={
-                "https://firebasestorage.googleapis.com/v0/b/portafolio-dd96b.appspot.com/o/images%2FaccountManager.png?alt=media&token=ad360b71-23d9-4749-8091-d40470179c4d"
+                "https://res.cloudinary.com/dwgww4t5i/image/upload/v1762882115/Disen%CC%83o_sin_ti%CC%81tulo_j4vq3p.png"
               }
               className="zoom"
               alt="thumbnail"
