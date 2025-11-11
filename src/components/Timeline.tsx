@@ -1,21 +1,14 @@
 import "@fortawesome/free-regular-svg-icons";
+import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import "../assets/styles/Timeline.scss";
-import { Chrono } from "react-chrono";
-import useTimelineHook, { WorkExperience } from "../hooks/useTimelineHook";
 import { useLanguage } from "../hooks/useContextLanguage";
-import { useEffect, useState } from "react";
-import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
+import useTimelineHook from "../hooks/useTimelineHook";
 
 function Timeline() {
    const {t,language} = useLanguage()
   const {data} = useTimelineHook(language)
-  const [dataformat, setdataformat] = useState<WorkExperience[]>([])
 
-
-useEffect(() => {
-  setdataformat(data)
-}, [data])
 
   return (
     <div id="history">
