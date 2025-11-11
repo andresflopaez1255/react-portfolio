@@ -7,7 +7,7 @@ type WorkExperience = {
   cardTitle: string;
   cardSubtitle?: string;
   cardDetailedText?: string;
-  [key: string]: any; // para campos adicionales
+
 };
 
 export default function useTimelineHook() {
@@ -32,7 +32,8 @@ export default function useTimelineHook() {
     const sorted = [...cleanData].sort(
       (a, b) => getEndDate(b.title) - getEndDate(a.title)
     );
-
+  
+    console.log(sorted)
     setSortedData(sorted);
   }, [data, status]);
 
