@@ -7,13 +7,13 @@ import useTimelineHook from "../hooks/useTimelineHook";
 function Timeline() {
   const {data} = useTimelineHook()
 
-  
 
   return (
     <div id="history">
       <div className="items-container">
         <h1>Career History</h1>
-        <Chrono
+       {
+        data.length >0 ?   <Chrono
          
           mode="VERTICAL_ALTERNATING"
           enableDarkToggle
@@ -31,8 +31,9 @@ function Timeline() {
             secondary	:"red"
           }}
          
-          items={data}
-        />
+          items={data }
+        /> : <div>cargando</div>
+       }
       </div>
     </div>
   );

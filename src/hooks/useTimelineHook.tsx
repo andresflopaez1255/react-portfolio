@@ -33,7 +33,6 @@ export default function useTimelineHook() {
       (a, b) => getEndDate(b.title) - getEndDate(a.title)
     );
   
-    console.log(sorted)
     setSortedData(sorted);
   }, [data, status]);
 
